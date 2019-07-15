@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SubjectButton from './SubjectButton'; // Import a component from another file
-import './https://www.w3schools.com/w3css/4/w3.css'
+import './css/w3.css'
 
 
 function App() {
@@ -14,9 +14,16 @@ function App() {
           This is my data science journey.
         </p>
 
-        <SubjectButton name="henry" />
-        <SubjectButton name="Henry" />
-        <SubjectButton name="Tin" />
+        <div class="w3-row">
+          <SubjectButton name="Create a simple react site from scratch" status="done" link="https://www.google.com" />
+          <SubjectButton name="Create a simple database"/>
+          <SubjectButton name="Hookup to an api" />
+          <SubjectButton name="Tying it all together" type="final"/>
+          <SubjectButton name="hello" />
+        </div>
+
+
+
       </header>
     </div>
   );
