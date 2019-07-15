@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import logo from './img/cake.png';
+import logo from './flower-logo.png';
 import './App.css';
 
 class App extends Component {
-
-
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +14,9 @@ class App extends Component {
   onChange = (event) => {
     this.setState({ term: event.target.value });
   }
+
+
+
   handleSubmit = (event) => {
     event.preventDefault();
     const api_key = 'dc6zaTOxFJmzC';
@@ -30,18 +31,30 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
+        <header className="App-header">
+          <p>
+            This is the header.
+          </p>
           <img src={logo} className="App-logo" alt="logo" />
-          <h3>This is a bo-na-na.  </h3>
-          <p>The bo-na-na will help you look for GIFs.</p>
-
+          <a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Learn React
+          </a>
+        </header>
+        <body>
+          <p>
+            This is the body.  Let me give you a search button.
+          </p>
           <form onSubmit={this.handleSubmit}>
             <input value={this.state.term} onChange={this.onChange} />
             <br/>
             <button>Search!</button>
           </form>
-          <img src={this.state.img} height="200" alt={this.state.term} />
-        </div>
+        </body>
       </div>
     );
   }
