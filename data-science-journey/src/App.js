@@ -15,11 +15,12 @@ function App() {
         </p>
 
         <div class="w3-row">
-          <SubjectButton name="Create a simple react site from scratch" status="done" link="https://www.google.com" />
-          <SubjectButton name="Create a simple database"/>
+          <SubjectButton name="Create a simple responsive design react site from scratch" status="done" link="https://www.google.com" />
+          <SubjectButton name="Create a simple database and practice joins"/>
           <SubjectButton name="Hookup to an api" />
           <SubjectButton name="Tying it all together" type="final"/>
-          <SubjectButton name="hello" />
+          <SubjectButton name="Create a simple python script" />
+          <SubjectButton name="Create a simple r script" />
         </div>
 
 

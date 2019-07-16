@@ -4,8 +4,11 @@ import './App.css';
 class SubjectButton extends Component {
   render() {
     return (
-      <div className="subject-button">
-        <button type="button" class="btn">{this.props.name}</button>
+      <div class="w3-col" style={{width: '20%'}}>
+        <button type="button" class="btn">
+        Day {this.props.day}<br/>
+         {this.props.name}
+        </button>
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.png';
 import './App.css';
+import './w3.css';
 import SubjectButton from './SubjectButton'; // Import a component from another file
 
 
@@ -30,9 +31,13 @@ function App() {
 
       </header>
       <body className="App-body">
-        <SubjectButton name="henry" day="1" />
-        <SubjectButton name="Henry" />
-        <SubjectButton name="Tin" />
+        <div class="w3-row">
+          <SubjectButton name="Husky Ride" day="1" />
+          <SubjectButton name="Reindeer Ride" day="2" />
+          <SubjectButton name="Ice Fishing" day="3" />
+          <SubjectButton name="Santa Park" day="4" />
+          <SubjectButton name="Snowmobile Ride" day="5" />
+        </div>
       </body>
     </div>
   );
