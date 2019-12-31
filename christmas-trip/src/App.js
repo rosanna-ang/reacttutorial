@@ -3,7 +3,8 @@ import logo from './logo.png';
 import './App.css';
 import './w3.css';
 import SubjectButton from './SubjectButton'; // Import a component from another file
-
+import Schedule from './Schedule'; // Import a component from another file
+import Countdown from './Countdown'; // Import a component from another file
 
 function App() {
   return (
@@ -26,11 +27,12 @@ function App() {
 
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Tan Clan's Trip To See Santa Claus!
         </p>
 
       </header>
       <body className="App-body">
+        <Countdown/>
         <div class="w3-row">
           <SubjectButton name="Husky Ride" day="1" />
           <SubjectButton name="Reindeer Ride" day="2" />
@@ -38,6 +40,7 @@ function App() {
           <SubjectButton name="Santa Park" day="4" />
           <SubjectButton name="Snowmobile Ride" day="5" />
         </div>
+        <Schedule name="Snowmobile Ride" day="5" />
       </body>
     </div>
   );
